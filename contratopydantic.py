@@ -3,9 +3,9 @@ from datetime import datetime, time
 from enum import Enum
 
 class ProdutoEnum(str, Enum):
-    produto1 = "ZapFlow com Gemini"
-    produto2 = "ZapFlow com chatGPT"
-    produto3 = "ZapFlow com Llama3.0"
+    produto1 = "Camisas Masculinas"
+    produto2 = "Camisas Femininas"
+    produto3 = "Calças"
 
 class Vendas(BaseModel):
         """

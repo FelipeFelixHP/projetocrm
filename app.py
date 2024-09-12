@@ -6,13 +6,13 @@ from database import salvar_no_postgres
 
 def main():
 
-    st.title("Sistema de CRM Vendas da ZapFlow - Frontend Simples")
+    st.title("Sistema de CRM Vendas da Roupas - Frontend Simples")
     email = st.text_input("Campo de texto para inserção do email do vendedor")
     data=  st.date_input("Campo para selecionar a data em que a venda foi realizada.", datetime.now())
     hora= st.time_input("Hora em que a venda foi realizada.", value=time(9,0))
     valor=st.number_input("valor monetário da venda realizada.", min_value=0.0, format="%.2f")
     quantidade=st.number_input("Quantidade de produtos vendidos.", min_value=1, step=1)
-    produto=st.selectbox("Campo de seleção para escolher o produto vendido.", ["ZapFlow com Llama3.0", "ZapFlow com chatGPT", "ZapFlow com Gemini"])
+    produto=st.selectbox("Campo de seleção para escolher o produto vendido.", ["Camisas Masculinas", "Camisas Femininas", "Calças"])
 
     if st.button("Salvar"):
 
